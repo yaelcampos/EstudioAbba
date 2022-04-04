@@ -3,28 +3,22 @@
     padding:0;
 }
 
-.nombre_proyecto{
-        font-family: "Comic Sans MS", sans-serif; 
-}
 
 body {
     background-color: rgb(219, 221, 107);  
     color: black ;
 }
 
+/*Index */
 .encabezado  {
     background: #FFE000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    display: flex;
 }
 
-
-
-.encabezado {
-    display: flex;
-    flex-direction: row;
-    height: 80px;
+.nav_nombre_idea{
+    width: 35%;
 }
 
 .logo {
@@ -35,12 +29,12 @@ body {
 }
 
 .nav_redes {
- width: 25rem;
- display: flex;
- flex-wrap: wrap;
- align-content: space-around;
- justify-content: space-around;
- text-decoration: none;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+  
 }
 
 #iconos_redes {
@@ -83,9 +77,7 @@ ul, ol {
     display: block;
 }
 
-#nav_menu ul li ul a:hover {
-    background-color: #799F0C;
-}
+
 
 #nav_menu li ul {
     display:none;
@@ -113,6 +105,11 @@ ul, ol {
     position: absolute;
     top: 24%;
     left: 16%;
+    transition: color 0.8s linear 0.2s;
+}
+
+.anuncio-1:hover {
+   color:#799F0C;
 }
 
 .anuncio-2 {
@@ -124,7 +121,12 @@ ul, ol {
     position: absolute;
     top: 24%;
     right: 16%;
+    transition: color 0.8s linear 0.2s;
 }
+
+.anuncio-2:hover {
+    color:#799F0C;
+ }
 
 .anuncio-3 {
     border: 1px solid black;
@@ -135,7 +137,12 @@ ul, ol {
     position: absolute;
     top: 115%;
     left: 35%;
+    transition: color 0.8s linear 0.2s;
 }
+
+.anuncio-3:hover {
+    color:#799F0C;
+ }
 
 .imagen-1 {
     width: 25rem;
@@ -161,6 +168,10 @@ ul, ol {
     border-color: black;
 }
 
+
+
+
+
 /* Acerca de  */
 .espacio_vacio_acerca {
    background-color: floralwhite;
@@ -172,14 +183,22 @@ ul, ol {
 .parrafo_acerca {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: 21px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 20%;
     width: 490px;
     position: relative;
     top: 113px;
     left: 356px;
+
 }
+
+.parrafo_acerca:hover{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    font-size: 21px; 
+}
+
 
 .contenedor_main {
     height: 50rem;
@@ -198,7 +217,15 @@ ul, ol {
     margin-top: 100px;
     position: relative;
     left: 405px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
+
+.foto_diseñadora_1:hover {
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+
 
 .foto_diseñadora_2 {
     width: 201px;
@@ -206,6 +233,13 @@ ul, ol {
     border-radius: 50%;
     margin-top: 100px;
     margin-left: 35%;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.foto_diseñadora_2:hover {
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
 .contenedor_diseñadoras_nombres {
@@ -238,12 +272,12 @@ ul, ol {
     position: relative;
     left: 28%;
     top: 60px;
-
-    
-  
 }
 
-/* contacto area*/
+
+
+
+                                  /* contacto area*/
 .body_contact {
     background-color: floralwhite;
 }
@@ -291,16 +325,16 @@ ul, ol {
     margin-top: 15px;
     margin-left: 32%;
     display: flex;     
-   flex-direction: column; 
-   justify-content: space-between;
-   text-align: center;
+    flex-direction: column; 
+    justify-content: space-between;
+    text-align: center;
 }
 
 .form_nombre {
     margin-top: 10px;
 }
 
-/*Proyectos */
+                                            /*Proyectos */
 .main_servicio {
     background-color: #ebde8d;
 }
@@ -316,13 +350,26 @@ ul, ol {
     width: 700px;
     height: 600px; 
     margin-left: 40px;
-    
+    transition: height 1.3s, widht 1.3s;
 }
 
-
+#tarjeta_1:hover {
+    width: 705px;
+    height: 605px;
+    border: 5px solid rgb(239, 243, 169);
+}
 
 #tarjeta_2 {
     width: 400px;
+    margin-left: 60px;
+    transition : widht 1.3s, height 1.3s;
+}
+
+#tarjeta_2:hover {
+    width: 395px;
+    height: 602px;
+    border: 5px solid rgb(239, 243, 169);
+   
 }
 
 .proyecto_descubri {
@@ -334,13 +381,25 @@ ul, ol {
     width: 615px;
     margin-left: 13px;
     margin-top: 20px;
+    transition : widht 1.3s, height 1.3s;
     
+}
+
+.imagen_min1:hover {
+    height: 502px;
+    width: 617px;
 }
 
 .imagen_min2 {
     height: 500px;
     width: 615px;
-  
+    transition : widht 1.3s, height 1.3s;
+}
+
+.imagen_min2:hover {
+    height: 502px;
+    width: 617px;
+    
 }
 
 .espacio_vacio_proyecto {
@@ -352,14 +411,31 @@ ul, ol {
     height: 500px;
     width: 615px;
     margin-left: 13px;
+    transition : widht 1.3s, height 1.3s;   
+}
+
+.imagen_min3:hover {
+    height: 502px;
+    width: 617px;   
 }
 
 .imagen_min4 {
     height: 500px;
     width: 615px;
+    transition : widht 1.3s, height 1.3s;
 }
 
-/*servicios */
+.imagen_min4:hover {
+    height: 502px;
+    width: 617px;
+    
+}
+
+.proyecto_descubri {
+   margin: 20px;
+}
+
+                                                /*servicios */
 .h1_servicio {
     margin:10px;
 }
@@ -405,6 +481,13 @@ h5 {
     width: 227px;
     background-color: floralwhite  ;
     text-align: center;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.h3_servicios:hover {
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
 }
 
 footer {
