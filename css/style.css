@@ -97,6 +97,7 @@ ul, ol {
 
 
 .anuncio-1 {
+    font-size: 20px;
     border: 1px solid black;
     border-radius: 8px;
     background-color:aliceblue;
@@ -113,6 +114,7 @@ ul, ol {
 }
 
 .anuncio-2 {
+    font-size: 20px;
     border: 1px solid black;
     border-radius: 8px;
     background-color:aliceblue;
@@ -129,6 +131,7 @@ ul, ol {
  }
 
 .anuncio-3 {
+    font-size: 20px;
     border: 1px solid black;
     border-radius: 8px;
     background-color:aliceblue;
