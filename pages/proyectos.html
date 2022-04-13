@@ -5,36 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header >
-        <nav class="encabezado">
-            <div class="nav_nombre_idea">
-                <img  class="logo"  src="../imagenes/logo.PNG"  alt=""> 
+        <nav class="navegador navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <i  class="icono fab fa-instagram"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i  class="icono fab fa-facebook"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i  class="icono fab fa-pinterest"></i>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" style="margin-left:70px" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="../index.html">Index</a></li>
+                      <li><a class="dropdown-item"  href="../pages/acerca_De.html">Nosotros</a></li>
+                      <li><a class="dropdown-item"  href="../pages/proyectos.html">Proyectos</a></li>
+                      <li><a class="dropdown-item"  href="../pages/servicios.html">Servicios</a></li>
+                      <li><a class="dropdown-item"  href="../pages/contactos.html">Contactanos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="nav_redes">
-                <a href="#" ><i id="iconos_redes"  class="fab fa-facebook-f"></i></a>
-                <a href="#" ><i id="iconos_redes"  class="fab fa-pinterest"></i></a>
-                <a href="#" ><i  id="iconos_redes" class="fab fa-instagram"></i></a>  
-            </div>
-       
-            <div id="nav_menu">
-                <ul >
-                    <li ><a class="item_menu" href="#">Menu</a>
-                        <ul class="lista_nav">
-                            <li ><a href="../index.html">index</a></li>
-                            <li ><a href="../pages/acerca_De.html">Acerca de nosotros</a></li>
-                            <li ><a href="../pages/proyectos.html">Proyectos</a></li>
-                            <li ><a href="../pages/servicios.html">Servicios</a></li>
-                            <li ><a href="../pages/contactos.html">Contactos</a></li>
-                        </ul>
-                    </li>     
-                </ul>   
-           </div> 
-        </nav>  
+        </nav> 
+           
            
     </header>
 
@@ -43,21 +54,15 @@
             
         </div>
 
-        <h1 class="proyecto_descubri" >Descubri  </h1>
+        <h1  class="proyecto_descubri" >Descubri  </h1>
 
-        <div class="contenedor_tarjetas_proyecto">
-            <div class="card" >
-                <img id="tarjeta_1"   src="../imagenes/decoracion_exterior.jpeg" class="card-img-top" alt="..." >
-                 <div class="card-body">
-                     <p class="card-text">Disfrutaras de detalles unicos que se completen con tus espacios verdes.</p>
-                </div>
-            </div>
+        <div id="contenedor_tarjetas" class= "grid col-6 col-md-12 col-sm-12" >
+            <img id="tarjeta_1"   src="../imagenes/decoracion_exterior.jpeg" class="card-img-top" alt="..." >
+          
             
-            <div class="card" >
+            <div  >
                 <img id="tarjeta_2"  src="../imagenes/diseño_interiores.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                 <p class="card-text" style="position: relative;left: 30px;">Eligiras aquellos toques y detalles que te gustarian que esten.</p>
-                </div>
+                
             </div>
         </div>    
 
@@ -67,20 +72,45 @@
         </div>
         
 
-        <div class="contenedor_fotos1">
+        <div class= "grid col-6 col-md-12 col-sm-12">
             <img class="imagen_min1" src="../imagenes/diseño_min1.webp" alt="">
             <img  class="imagen_min2" src="../imagenes/imagen_min2.webp" alt="">
         </div>
       
-        <div class="contenedor_fotos2">
+        <div class= "grid col-6 col-md-12 col-sm-12">
             <img class="imagen_min3" src="../imagenes/diseño_3.jpeg" alt="">
             <img class="imagen_min4" src="../imagenes/diseño_4.webp" alt="">
  
         </div>
     </main>
 
+    <section class="grid col-12">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #799F0C; margin-top: 45px;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3"></span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                    Cotizacion y asesoramiento sin costo
+                </button>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Yael Camps
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
 
-
-    <footer> By campos yael</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

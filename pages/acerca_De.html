@@ -6,66 +6,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>acerca-de</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="encabezado">
-                <div class="nav_nombre_idea">
-                    <img  class="logo"  src="../imagenes/logo.PNG"  alt=""> 
+        <header >
+            <nav class="navegador navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <i  class="icono fab fa-instagram"></i>
+                      </li>
+                      <li class="nav-item">
+                        <i  class="icono fab fa-facebook"></i>
+                      </li>
+                      <li class="nav-item">
+                        <i  class="icono fab fa-pinterest"></i>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" style="margin-left:70px" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="index.html">Index</a></li>
+                          <li><a class="dropdown-item"  href="acerca_De.html">Nosotros</a></li>
+                          <li><a class="dropdown-item"  href="../pages/proyectos.html">Proyectos</a></li>
+                          <li><a class="dropdown-item"  href="../pages/servicios.html">Servicios</a></li>
+                          <li><a class="dropdown-item"  href="../pages/contactos.html">Contactanos</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                        
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="nav_redes">
-                    <a href="#" ><i id="iconos_redes"  class="fab fa-facebook-f"></i></a>
-                    <a href="#" ><i id="iconos_redes"  class="fab fa-pinterest"></i></a>
-                    <a href="#" ><i  id="iconos_redes" class="fab fa-instagram"></i></a>  
-                </div>
-           
-                <div id="nav_menu">
-                    <ul >
-                        <li ><a class="item_menu" href="#">Menu</a>
-                            <ul class="lista_nav">
-                                <li ><a href="../index.html">index</a></li>
-                                <li ><a href="../pages/acerca_De.html">Acerca de nosotros</a></li>
-                                <li ><a href="../pages/proyectos.html">Proyectos</a></li>
-                                <li ><a href="../pages/servicios.html">Servicios</a></li>
-                                <li ><a href="../pages/contactos.html">Contactos</a></li>
-                            </ul>
-                        </li>     
-                    </ul>   
-               </div> 
-            </nav>  
-        </header>    
+            </nav> 
+               
+               
+        </header>  
 
-        <div class="espacio_vacio_acerca">
-            
-        </div>
+        <div class="grid col-12">
+            <h1 class="espacio_vacio_acerca" ></h1>
+         </div>
 
-        <div class="contenedor_parrafo_acerca">
+         <div class="grid col-12 col-md-12 col-sm-12"  >
             <p class="parrafo_acerca">Desde la fundacion de la oficina en 2014, nos hemos quedado con una filosofia simple: cualquier entorno de la vida debe 
                 diseñarse de la manera que mejor sirva al proposito segun las necesidades de cada persona. 
             </p>
         </div>
         
-        <main class="contenedor_main">
-            <div class="conteiner_foto_diseñadoras">
+        <main id="main_acerca_de"  class="grid col-6 col-md-12 col-sm-12" > 
+            <div class="box_foto">
                 <img class="foto_diseñadora_1" src="../imagenes/perfil-1.jpeg" alt="">
+                <h1 class="diseñadora_nombre_1">Jaqueline Remichezky </h1>  
+            </div>
 
+            <div   class="box_foto" >
                 <img class="foto_diseñadora_2" src="../imagenes/perfi_2.webp" alt="">
-            </div>
-
-            <div class="contenedor_diseñadoras_nombres">
-                <h1 class="diseñadora_nombre_1">Jaqueline Remichezky </h1>
                 <h1 class="diseñadora_nombre_2"> Marianne Morck</h1>
-            </div>
-
-            <div class="contenedor_parrafo_quienes_somos">
-                <p class="parrafo_quienes_somos">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
             </div>
         </main>
 
+        <div id="parrafo_quienes_somos" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magni assumenda architecto praesentium fugiat fugit unde consequatur nisi corporis quia, quis numquam, eum nesciunt blanditiis repellendus nam accusantium explicabo saepe.</p>
+        </div>
+       
+        
+    <section class="grid col-12">
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #799F0C; margin-top: 45px;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3"></span>
+              <button type="button" class="btn btn-outline-light btn-rounded">
+                  Cotizacion y asesoramiento sin costo
+              </button>
+            </p>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: Yael Camps
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
 
-        <footer> By campos yael</footer>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>   
