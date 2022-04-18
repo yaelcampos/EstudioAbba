@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*Index*/
+/*Acerca_de*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #dbdd6b;
+  color: #464343; }
+
+/*Index */
+.navegador {
+  background: #FFE000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #799F0C, #FFE000); }
+
+.grid {
+  display: grid;
+  overflow: hidden; }
+
+.col-4 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.icono-redes {
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 5px; }
+
+.main_conteiner {
+  width: 100%; }
+
+.col-6 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.imagen-1 {
+  width: 75%;
+  margin-left: 80px;
+  margin-top: 10%; }
+
+.imagen-2 {
+  width: 75%;
+  margin-left: 60px;
+  margin-top: 10%; }
+
+.imagen-3 {
+  width: 100%;
+  height: 30rem;
+  margin-left: 58px;
+  margin-top: 21px;
+  border-radius: 5px;
+  border-color: black; }
+
+/* Acerca de  */
+.col-12 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.espacio_vacio_acerca {
+  background-color: floralwhite;
+  height: 80px; }
+
+.parrafo_acerca {
+  color: #464343;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20%;
+  width: 490px;
+  position: relative;
+  top: 113px;
+  left: 356px; }
+
+.parrafo_acerca:hover {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  font-size: 21px; }
+
+#main_acerca_de {
+  width: 100%;
+  background-color: floralwhite; }
+
+.box_foto {
+  text-align: center; }
+
+.foto_diseñadora_1 {
+  width: 201px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 100px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
+
+.foto_diseñadora_1:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
+
+.diseñadora_nombre_1 {
+  font-family: cursive;
+  font-size: larger;
+  margin-top: 20px; }
+
+.foto_diseñadora_2 {
+  width: 201px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 6px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
+
+.foto_diseñadora_2:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
+
+.diseñadora_nombre_2 {
+  font-family: cursive;
+  font-size: larger;
+  margin-top: 20px; }
+
+#parrafo_quienes_somos {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 20%;
+  margin: 100px; }
+
+/* contacto area*/
+.espacio_vacio_contacto {
+  margin-bottom: 10px; }
+
+.imagen_contactos {
+  background-image: url(../imagenes/disfrutar_espacios.webp);
+  background-repeat: no-repeat;
+  height: 550px;
+  background-size: cover; }
+
+.h1_contacto {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  color: aliceblue; }
+
+.p_contacto {
+  width: 200px;
+  position: relative;
+  top: 110px;
+  left: 50px;
+  color: aliceblue; }
+
+.contenedor_formulario {
+  height: 500px; }
+
+.form {
+  width: 405px;
+  height: 350px;
+  margin-top: 15px;
+  margin-left: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; }
+
+.form_nombre {
+  margin-top: 10px; }
+
+/*Proyectos */
+#contenedor_tarjetas {
+  width: 100%; }
+
+#tarjeta_1 {
+  width: 700px;
+  height: 600px;
+  margin-left: 40px;
+  transition: height 1.3s, widht 1.3s; }
+
+#tarjeta_1:hover {
+  width: 705px;
+  height: 605px;
+  border: 5px solid #eff3a9; }
+
+#tarjeta_2 {
+  width: 400px;
+  margin-left: 60px;
+  transition: widht 1.3s, height 1.3s; }
+
+#tarjeta_2:hover {
+  width: 395px;
+  height: 602px;
+  border: 5px solid #eff3a9; }
+
+.imagen_min1 {
+  height: 500px;
+  width: 615px;
+  margin-left: 13px;
+  margin-top: 20px;
+  transition: widht 1.3s, height 1.3s; }
+
+.imagen_min1:hover {
+  height: 502px;
+  width: 617px; }
+
+.imagen_min2 {
+  height: 500px;
+  width: 615px;
+  transition: widht 1.3s, height 1.3s; }
+
+.imagen_min2:hover {
+  height: 502px;
+  width: 617px; }
+
+.espacio_vacio_proyecto {
+  height: 50px;
+  background-color: floralwhite; }
+
+.imagen_min3 {
+  height: 500px;
+  width: 615px;
+  margin-left: 13px;
+  transition: widht 1.3s, height 1.3s; }
+
+.imagen_min3:hover {
+  height: 502px;
+  width: 617px; }
+
+.imagen_min4 {
+  height: 500px;
+  width: 615px;
+  transition: widht 1.3s, height 1.3s; }
+
+.imagen_min4:hover {
+  height: 502px;
+  width: 617px; }
+
+/*servicios */
+.main_servicio {
+  background: none;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.h1_servicio {
+  animation-duration: 2s;
+  animation-name: slidein;
+  text-align: center; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.diseño_carrosel {
+  text-align: -webkit-center; }
+
+.imagen_carrusel {
+  border: 2px solid white;
+  padding: 15px; }
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    grid-template-columns: repeat(3, 1fr); }
+  .col-md-6 {
+    grid-template-columns: repeat(2, 1fr); }
+  .col-md-12 {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media screen and (max-width: 572px) {
+  .col-sm-4 {
+    grid-template-columns: repeat(3, 1fr); }
+  .col-sm-6 {
+    grid-template-columns: repeat(2, 1fr); }
+  .col-sm-12 {
+    grid-template-columns: repeat(1, 1fr); } }
