@@ -338,10 +338,21 @@ body {
     text-align: -webkit-center;
 }
 
-.imagen_carrusel {
-    border: 2px solid white;
-    padding: 15px;
+
+$imagenes: (imagen-carrusel-1 : pink, imagen-carrusel-2 : #dda0dd,
+            imagen-carrusel-3 : #9370db,imagen-carrusel-4 : pink,
+            imagen-carrusel-5 : #dda0dd,imagen-carrusel-6 : #9370db
+            );
+
+@each $imagen, $color in $imagenes {
+    .image--#{$imagen} {
+       margin: 2px solid $color;
+       padding: 10px;
+    }
 }
+            
+
+
 
 @media screen and (max-width: 768px){
 

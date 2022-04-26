@@ -256,9 +256,29 @@ body {
 .diseño_carrosel {
   text-align: -webkit-center; }
 
-.imagen_carrusel {
-  border: 2px solid white;
-  padding: 15px; }
+.image--imagen-carrusel-1 {
+  margin: 2px solid pink;
+  padding: 10px; }
+
+.image--imagen-carrusel-2 {
+  margin: 2px solid #dda0dd;
+  padding: 10px; }
+
+.image--imagen-carrusel-3 {
+  margin: 2px solid #9370db;
+  padding: 10px; }
+
+.image--imagen-carrusel-4 {
+  margin: 2px solid pink;
+  padding: 10px; }
+
+.image--imagen-carrusel-5 {
+  margin: 2px solid #dda0dd;
+  padding: 10px; }
+
+.image--imagen-carrusel-6 {
+  margin: 2px solid #9370db;
+  padding: 10px; }
 
 @media screen and (max-width: 768px) {
   .col-md-4 {
