@@ -36,7 +36,6 @@ body {
 
 .col-4 {
     grid-template-columns: repeat(3, 1fr);
-   
 }
 
 .icono-redes {
@@ -53,7 +52,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
- .imagen-1 {
+.imagen-1 {
     width: 75%;
     margin-left:80px;
     margin-top: 10%;
@@ -81,9 +80,8 @@ body {
 }
 
 .espacio_vacio_acerca {
-   background-color: $fondo-entre-titulos;
-   height: 80px;
-  
+    background-color: $fondo-entre-titulos;
+    height: 80px;
 }
 
 .parrafo_acerca {
@@ -109,7 +107,6 @@ body {
 #main_acerca_de{
     width: 100%;
     background-color: floralwhite;
-   
 }
 
 .box_foto {
@@ -129,9 +126,6 @@ body {
         -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
         box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     }
-
-
-
 
 
 .diseñadora_nombre_1 {
@@ -168,7 +162,6 @@ body {
     text-align: center;
     margin-bottom: 20%;
     margin: 100px;
-   
 }
                                /* contacto area*/
 
@@ -182,22 +175,81 @@ body {
     background-repeat: no-repeat;
     height: 550px;
     background-size: cover;
-   
+}
+
+.div-contenedor-contacto {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.p-formulario {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #FFE000;
+    width: 800px;
+}
+
+.contenedor-formulario {
+    height: 500px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    border: 10px solid floralwhite;
+}
+
+.nombre-formulario {
+    width: 500px;
+    margin: 20px;
+    padding: 5px;
+    background-color: none;
+}
+
+.email-formulario {
+    width: 500px;
+    margin: 20px; 
+    padding: 5px;
+    background-color: none;
+}
+
+.textarea-formulario {
+    width: 500px;
+    margin: 20px;
+    background-color: none;
+}
+
+.boton-formulario {
+    padding: 10px;
+    background: none;
+    border-radius: 5px;
+}
+
+/*MIXIN */
+@mixin detalle ($position, $color) {
+
+    position: $position;
+    color: $color;   
 }
 
 .h1_contacto {
-    position: relative;
+    @include detalle (relative, aliceblue);
     top:80px;
     left: 50px;
-    color:aliceblue
 }
 
 .p_contacto {
+    @include detalle (relative, aliceblue);
     width: 200px;
-    position: relative;
     top:110px;
     left: 50px;
-    color: aliceblue;
 }
 
 .contenedor_formulario {
@@ -225,6 +277,7 @@ body {
     width: 100%;
 }
 
+
 #tarjeta_1 {
     width: 700px;
     height: 600px; 
@@ -248,7 +301,6 @@ body {
     width: 395px;
     height: 602px;
     border: 5px solid rgb(239, 243, 169);
-   
 }
 
 .imagen_min1 {
@@ -282,27 +334,22 @@ body {
     background-color: $fondo-entre-titulos;
 }
 
+/*extend */
 .imagen_min3 {
-    height: 500px;
-    width: 615px;
+    @extend .imagen_min2;
     margin-left: 13px;
-    transition : widht 1.3s, height 1.3s;   
-}
+    }
 
 .imagen_min3:hover {
-    height: 502px;
-    width: 617px;   
+    @extend .imagen_min2:hover; 
 }
 
 .imagen_min4 {
-    height: 500px;
-    width: 615px;
-    transition : widht 1.3s, height 1.3s;
+    @extend .imagen_min2;
 }
 
 .imagen_min4:hover {
-    height: 502px;
-    width: 617px;
+    @extend .imagen_min2:hover; 
     
 }
 
@@ -312,42 +359,43 @@ body {
     background: none;
     margin-top: 80px;
     margin-bottom: 80px;
-   
 }
 
 .h1_servicio {
     animation-duration: 2s;
     animation-name: slidein;
     text-align: center;
-   
 }
 
 @keyframes slidein {
     from {
-      margin-left:100%;
-      width:300%
+        margin-left:100%;
+        width:300%
     }
-  
+
     to {
-     margin-left:0%;
-     width:100%;
-   }
-  }
+        margin-left:0%;
+        width:100%;
+    }
+}
 
 .diseño_carrosel {
     text-align: -webkit-center;
 }
 
 
-$imagenes: (imagen-carrusel-1 : pink, imagen-carrusel-2 : #dda0dd,
-            imagen-carrusel-3 : #9370db,imagen-carrusel-4 : pink,
-            imagen-carrusel-5 : #dda0dd,imagen-carrusel-6 : #9370db
+$imagenes: (imagen-carrusel-1 : pink,
+            imagen-carrusel-2 : #dda0dd,
+            imagen-carrusel-3 : #9370db,
+            imagen-carrusel-4 : pink,
+            imagen-carrusel-5 : #dda0dd,
+            imagen-carrusel-6 : #9370db
             );
 
 @each $imagen, $color in $imagenes {
-    .image--#{$imagen} {
-       margin: 2px solid $color;
-       padding: 10px;
+    .#{$imagen} {
+        border: 2px solid $color;
+        padding: 10px;
     }
 }
             
@@ -365,29 +413,22 @@ $imagenes: (imagen-carrusel-1 : pink, imagen-carrusel-2 : #dda0dd,
     }
 
     .col-md-12 {
-        grid-template-columns: repeat(1, 1fr);  
+        grid-template-columns: repeat(1, 1fr); 
     }
-
-   
-
 }
 
 @media screen and (max-width: 572px){
 
     .col-sm-4 {
         grid-template-columns: repeat(3, 1fr);
-       
     }
 
     .col-sm-6 {
-        grid-template-columns: repeat(2, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .col-sm-12 {
         grid-template-columns: repeat(1, 1fr);
 
     }
-
-
 } 
